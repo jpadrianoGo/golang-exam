@@ -4,12 +4,12 @@ This project follows a microservice architecture on a single network with nginx 
 
 ## Services
 
-The services are running on `http://localhost:80` and currently has four (4) endpoints.
+The services are running on `http://localhost:80` and are currently made up of four (4) endpoints.
 
 #### 1. Bar service (REST)
 
-1. `/` - when you visit `http://localhost:80`, it is expected to have a get a message output "This is bar service."
-2. `/ping` - when you visit `http://localhost:80/ping`, it is expected to get a message output "Pong!" with HTTP status 200 in JSON format.
+1. `/` - when you visit `http://localhost:80`, it is expected to return "This is bar service."
+2. `/ping` - when you visit `http://localhost:80/ping`, it is expected to return "Pong!" with HTTP status 200 in JSON format.
 
 #### 2. Fileupload service (GraphQL)
 
