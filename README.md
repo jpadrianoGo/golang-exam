@@ -9,7 +9,7 @@ The services are running on `http://localhost:80` and currently has four (4) end
 #### 1. Bar service (REST)
 
 1. `/` - when you visit `http://localhost:80`, it is expected to have a get a message output "This is bar service."
-2. `/ping` - when you visit `http://localhost:80/ping`, it is expected to get a message output "Pong!" with HTTP status 200.
+2. `/ping` - when you visit `http://localhost:80/ping`, it is expected to get a message output "Pong!" with HTTP status 200 in JSON format.
 
 #### 2. Fileupload service (GraphQL)
 
@@ -38,14 +38,14 @@ This is bar service!
 
 <img width="1339" alt="Screen Shot 2021-06-07 at 7 25 30 PM" src="https://user-images.githubusercontent.com/2811885/121001369-2ef21080-c7c6-11eb-86bb-b596046bc60b.png">
 
-2. A message displaying "Success!" when we visit `http://localhost:80/ping`
+2. A JSON response displaying "Pong!" and status 200 when we visit `http://localhost:80/ping`
 
 ```
 $ curl http://localhost:80/ping
 {"status":"200","message":"Success!"}
 ```
 
-<img width="1340" alt="Screen Shot 2021-06-07 at 7 25 36 PM" src="https://user-images.githubusercontent.com/2811885/121001372-2f8aa700-c7c6-11eb-9250-503773062a23.png">
+<img width="1211" alt="Screen Shot 2021-06-07 at 8 52 25 PM" src="https://user-images.githubusercontent.com/2811885/121012087-4fc06300-c7d2-11eb-83d3-133bb9552954.png">
 
 #### 2. Add a `ping` query to Fileupload service
 
