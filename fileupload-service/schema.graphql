@@ -18,6 +18,7 @@ input UploadFile {
 "The `Query` type, represents all of the entry points into our object graph."
 type Query {
     empty: String!
+    ping: String!
 }
 
 "The `Mutation` type, represents all updates we can make to our data."
