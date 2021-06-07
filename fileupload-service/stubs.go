@@ -5,7 +5,7 @@ package fileupload
 import (
 	"context"
 
-	"github.com/99designs/gqlgen/example/fileupload/model"
+	"fileupload/model"
 	"github.com/99designs/gqlgen/graphql"
 )
 
@@ -18,12 +18,14 @@ type Stub struct {
 	}
 	QueryResolver struct {
 		Empty func(ctx context.Context) (string, error)
+		Ping  func(ctx context.Context) (string, error)
 	}
 }
 
 func (r *Stub) Mutation() MutationResolver {
 	return &stubMutation{r}
 }
+
 func (r *Stub) Query() QueryResolver {
 	return &stubQuery{r}
 }
@@ -47,4 +49,8 @@ type stubQuery struct{ *Stub }
 
 func (r *stubQuery) Empty(ctx context.Context) (string, error) {
 	return r.QueryResolver.Empty(ctx)
+}
+
+func (r *stubQuery) Ping(ctx context.Context) (string, error) {
+	return r.QueryResolver.Ping(ctx)
 }

@@ -12,8 +12,8 @@ import (
 
 	"github.com/99designs/gqlgen/graphql/playground"
 
-	"github.com/99designs/gqlgen/example/fileupload"
-	"github.com/99designs/gqlgen/example/fileupload/model"
+	"fileupload"
+	"fileupload/model"
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/handler"
 )

@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# This is just a helper script to test the fileupload service.
+# Usage:
+#
+# $ ./request_fileupload.sh
+#
+
 FILEUPLOAD_HOST="http://localhost:80/query"
 
 curl "$FILEUPLOAD_HOST" \
