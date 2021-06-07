@@ -51,7 +51,7 @@ $ curl http://localhost:80/ping
 
 > Category: General Golang Knowledge & Basic GraphQL
 
-- We added a `ping` query to Fileupload service in this [commit](https://github.com/akaru-io/golang-exam/commit/f4c4096e88dfb732023d62a3dcdefca0439496fa).
+- We added a `ping` query to Fileupload service in this [commit](https://github.com/akaru-io/golang-exam/commit/5da11496bdae5d3ca5d56d77d7455d7f525b11ce)
 - Update the code in `fileupload-service` by writing a resolver to implement the `ping` query.
 - The ping query should return a text response like below
 
