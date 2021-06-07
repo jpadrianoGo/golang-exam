@@ -9,11 +9,11 @@ The services are running on `http://localhost:80` and currently has four (4) end
 #### 1. Bar service (REST)
 
 1. `/` - when you visit `http://localhost:80`, it is expected to have a get a message output "This is bar service."
-2. `/ping` - when you visit `http://localhost:80/ping`, it is expected to get a message output "Success" with HTTP status 200.
+2. `/ping` - when you visit `http://localhost:80/ping`, it is expected to get a message output "Pong!" with HTTP status 200.
 
 #### 2. Fileupload service (GraphQL)
 
-1. `/fileupload` - when you visit `http://localhost:80/fileupload`, it should show the GraphQL playground.
+1. `/fileupload` - when you visit `http://localhost:80/fileupload`, it should show the interface for GraphQL playground.
 2. `/query` - you can perform requests here for the fileupload mutations and queries.
 
 ## What you need to do
@@ -90,6 +90,11 @@ $ git clone git@github.com:akaru-io/golang-exam.git
 ```
 $ docker-compose up --build
 ```
+
+## References
+
+1. Gqlgen - <https://gqlgen.com/>
+2. Go generate - <https://golang.org/pkg/cmd/go/internal/generate/>
 
 ## How to submit
 

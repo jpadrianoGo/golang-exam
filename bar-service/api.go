@@ -25,7 +25,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 func pingHandler(w http.ResponseWriter, r *http.Request) {
 	jsonResponse := JSONResponse{
 		Status:  "200",
-		Message: "Success!",
+		Message: "Pong!",
 	}
 
 	resp, err := json.Marshal(jsonResponse)
